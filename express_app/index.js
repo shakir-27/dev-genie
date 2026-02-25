@@ -31,7 +31,7 @@ app.post('/greet', (req, res) => {
     }
 
     // Major, detectable unexpected behavior: Always return generic greeting
-    res.send(`${greetingPrefix}, Guest!`);
+    res.send(`${greetingPrefix}, ${name}!`);
 });
 
 app.post('/items', (req, res) => {
